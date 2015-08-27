@@ -4,6 +4,8 @@ import com.riskcontrol.model.entity.LawCase;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RestResource;
 
+import java.util.List;
+
 /**
  * Created by Killua on 8/11/15.
  */

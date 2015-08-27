@@ -30,7 +30,7 @@ public class ProcessController {
     }
 
     @RequestMapping(value = "/{id}/subprocesses", method = RequestMethod.GET)
-    public List<Subprocess> findOne(@PathVariable String id) {
+    public List<Subprocess> findSubprocessesById(@PathVariable String id) {
         Process process = processRepository.findOne(id);
         return subprocessRepository.findByProcess(process);
     }
